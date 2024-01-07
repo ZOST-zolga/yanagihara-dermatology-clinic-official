@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+@use 'const';
+
+.access{
+    width: 90%;
+    margin: 0 auto 32px auto;
+    // margin: 0 40px 40px 40px;
+}
+.address-box{
+    display: flex;
+}
+.exterior-img{
+    max-width: 280px;
+}
+.access-h1{
+    font-size: 1.5rem;;
+    font-weight: bold;
+}

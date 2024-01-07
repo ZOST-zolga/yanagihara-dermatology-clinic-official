@@ -1,0 +1,35 @@
+.symptoms-contents {
+  width: 96%;
+  margin: 32px auto;
+  display: flex;
+}
+
+@media (max-width: 880px) {
+  .symptoms-contents {
+    width: 96%;
+    display: block;
+  }
+}
+.content-sentence {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.thumnail-img {
+  width: 280px;
+  margin-left: 16px;
+}
+
+@media (max-width: 880px) {
+  .thumnail-img {
+    margin: 0 auto;
+  }
+}
+.symptoms-desc {
+  text-indent: 1rem;
+}
+
+.attachment-full {
+  width: 280px;
+  height: auto;
+}/*# sourceMappingURL=symptoms.css.map */

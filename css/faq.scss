@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+@use'const';
+
+.faq{
+    width:96%;
+    max-width:800px;
+    margin:0 auto 16px auto;
+}
+.open{
+    /* position:absolute;の親要素はposition: relative;をつけるから */
+    position: relative; 
+    background-color: const.$beige;
+    padding: 10px;
+}
+.open::after{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    content: '+';
+    font-size: 2rem;
+    transform: translateY(-50%);
+}
+.open.activation::after{
+    content: '-';
+}
+.a-container{
+    display: none;
+    background-color: const.$white;
+    padding: 10px;
+}
+.a-container.activation{
+    display: block;
+}

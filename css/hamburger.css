@@ -1,0 +1,72 @@
+.hamburger-li {
+  margin: 10px;
+}
+
+.wrapper {
+  display: none;
+}
+
+@media (max-width: 880px) {
+  .wrapper {
+    display: flex;
+    z-index: 10;
+    position: relative;
+  }
+}
+.hamburger-navi {
+  position: fixed;
+  top: 80px;
+  left: 50px;
+  z-index: 200;
+  transform: translateX(-200px);
+  transition: 1s;
+}
+
+.hamburger-navi.active {
+  transform: translateX(0);
+}
+
+.hamburger-li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (max-width: 880px) {
+  .toggle_btn span {
+    width: 40px;
+    height: 3px;
+    display: block;
+    background-color: rgb(195, 114, 140);
+    margin: 8px 0;
+  }
+}
+.toggle_btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.toggle_btn.active span:nth-child(1) {
+  transform: translateY(5px) rotate(-45deg);
+}
+
+.toggle_btn.active span:nth-child(2) {
+  transform: translateY(-5px) rotate(45deg);
+}
+
+.toggle_btn.active span {
+  background-color: #fff;
+}
+
+#mask.active {
+  background-color: rgb(195, 114, 140);
+  opacity: 0.8;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}/*# sourceMappingURL=hamburger.css.map */

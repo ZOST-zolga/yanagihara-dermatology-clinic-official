@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+@use 'const';
+
+.own-expense-container{
+
+}
+.own-expense-sentence{
+    width: 96%;
+    margin: 0 auto;
+}
+.own-expense-thumnail-img{
+    width: 50%;
+    margin: 16px auto 0 auto;
+}
+.own-expense-thumnail-img img{
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+}

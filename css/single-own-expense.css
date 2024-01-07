@@ -1,0 +1,16 @@
+.own-expense-sentence {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.own-expense-thumnail-img {
+  width: 50%;
+  margin: 16px auto 0 auto;
+}
+
+.own-expense-thumnail-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  text-align: center;
+}/*# sourceMappingURL=single-own-expense.css.map */

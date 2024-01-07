@@ -1,0 +1,17 @@
+.access {
+  width: 90%;
+  margin: 0 auto 32px auto;
+}
+
+.address-box {
+  display: flex;
+}
+
+.exterior-img {
+  max-width: 280px;
+}
+
+.access-h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}/*# sourceMappingURL=access.css.map */

@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* *{
+    background-color: red;
+} */
+
+.swiper > .swiper-button-prev{
+    color: #fff;
+}
+.swiper  > .swiper-button-next{
+    color: #fff;
+}
+.swiper .swiper-pagination-bullet-active{
+    background-color: #fff;
+}
+@media(max-width: 580px){
+    .swiper-button-prev::after,.swiper-button-next::after{
+        font-size: 20px;
+    }
+}

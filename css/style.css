@@ -1,0 +1,282 @@
+html {
+  color: #333;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Times New Roman", Times, serif;
+}
+
+p, a, li, h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.1rem;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cmn-part {
+  width: 96%;
+  margin: 16px auto;
+}
+
+.cmn-title:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  content: "";
+  background-image: repeating-linear-gradient(-45deg, #fff, #fff 1px, transparent 2px, transparent 5px);
+  background-size: 7px 7px;
+  backface-visibility: hidden;
+}
+
+.notice-container {
+  border-top: solid 2px rgb(237, 216, 199);
+  border-bottom: solid 2px rgb(237, 216, 199);
+  margin: 8px;
+  padding: 8px;
+}
+
+.notice-title {
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+
+.loop-area {
+  overflow: hidden;
+}
+
+.loop-content {
+  animation: flow 8s infinite linear 1s both;
+  padding-left: 100%;
+  white-space: nowrap;
+}
+
+@keyframes flow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.news-container {
+  border-top: solid 2px rgb(237, 216, 199);
+  border-bottom: solid 2px rgb(237, 216, 199);
+  margin: 8px;
+  padding: 16px 8px;
+}
+
+.news-title {
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  animation: bounding-animation 2s infinite;
+}
+
+@keyframes bounding-animation {
+  0%, 50%, 100% {
+    top: 0;
+  }
+  25% {
+    top: -0.8rem;
+  }
+  75% {
+    top: -0.5rem;
+  }
+}
+.cmn-title {
+  background-color: rgb(237, 216, 199);
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 32px;
+  margin: 24px;
+  position: relative;
+  color: #333;
+}
+
+.cmn-each-part {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 580px) {
+  .cmn-each-part {
+    display: block;
+  }
+}
+.cmn-two-part {
+  width: 100%;
+}
+
+.medical-hours-table {
+  margin: 16px auto 0 auto;
+}
+
+.medical-hours-row {
+  border: solid 1px #fff;
+}
+
+.medical-hours-table-title {
+  line-height: 2.6rem;
+  text-align: center;
+  background-color: rgb(237, 216, 199);
+  padding: 4px;
+}
+
+.medical-hours-content {
+  text-align: center;
+  background-color: rgba(237, 216, 199, 0.5);
+  width: 32px;
+  border: solid 1px #fff;
+}
+
+.medical-hours-info {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.medical-hours-info-title {
+  width: 48px;
+  background-color: #66cdaa;
+  padding: 8px;
+  color: #fff;
+}
+
+.bring-list-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bring-item {
+  line-height: 2rem;
+}
+
+.address-container, .access-list {
+  width: 96%;
+}
+
+.address {
+  line-height: 2rem;
+}
+
+.tel-area-container {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: rgba(195, 114, 140, 0.8);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: 500;
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 580px) {
+  .tel-area-container {
+    display: none;
+  }
+}
+.tel-mark {
+  color: #fff;
+  font-size: 32px;
+  margin: 8px;
+}
+
+.tel-info {
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+}
+
+.tel-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tel {
+  font-size: 26px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tel-area-container-sp {
+  text-align: center;
+  margin: 16px;
+}
+
+@media (min-width: 581px) {
+  .tel-area-container-sp {
+    display: none;
+  }
+}
+.tel-mark-sp {
+  margin: 0 8px;
+}
+
+.tel-sp {
+  font-size: 32px;
+  color: rgb(195, 114, 140);
+  text-decoration: none;
+}
+
+.fa-phone {
+  font-size: 32px;
+}
+
+.access-item-top {
+  margin-top: 0 16px;
+}
+
+.access-item {
+  line-height: 2rem;
+}
+
+.various {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 36px auto 24px auto;
+}
+
+.various {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pics-a {
+  width: 25%;
+  display: block;
+}
+
+@media (max-width: 580px) {
+  .pics-a {
+    width: 40%;
+  }
+}
+@media (min-width: 1281px) {
+  .pics-a {
+    width: 20%;
+    margin: 0 8px;
+  }
+}
+@media (max-width: 580px) {
+  .pics {
+    width: 100%;
+  }
+}
+.tab {
+  text-indent: 1em;
+}/*# sourceMappingURL=style.css.map */

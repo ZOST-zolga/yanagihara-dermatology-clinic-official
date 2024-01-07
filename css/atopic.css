@@ -1,0 +1,9 @@
+.symptoms-container {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.symptoms-desc {
+  text-indent: 1rem;
+}/*# sourceMappingURL=atopic.css.map */

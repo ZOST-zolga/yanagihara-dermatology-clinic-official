@@ -1,0 +1,44 @@
+.medical-contents-detail {
+  margin: 16px 16px 16px 32px;
+}
+
+.medical-contents-detail-a {
+  background-color: rgb(237, 216, 199);
+  width: 96%;
+  height: auto;
+  display: block;
+  padding: 8px;
+  color: #333;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.medical-contents-detail-a:hover {
+  background-color: rgb(252, 207, 205);
+}
+
+.insurance-treatment {
+  background-color: rgb(252, 207, 205);
+  width: 50%;
+  height: 320px;
+  text-decoration: none;
+}
+
+.own-expense-treatment {
+  background-color: #a2e8d1;
+  width: 50%;
+  height: 320px;
+  text-decoration: none;
+}
+
+.treatment-title {
+  text-align: center;
+  line-height: 320px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.insurance-treatment:hover, .own-expense-treatment:hover {
+  background-color: #dad8d8;
+}/*# sourceMappingURL=treatment.css.map */

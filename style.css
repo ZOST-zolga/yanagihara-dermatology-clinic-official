@@ -1,0 +1,115 @@
+/*
+Theme Name:okumura-theme
+Author:Mariko Okumura
+Description: This is my original theme
+Version:1.0
+*/
+
+/* body {
+  overflow-x: hidden;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.cmn-title {
+  position: relative;
+  padding: 1.5rem 1rem;
+  color: #333;
+}
+
+.cmn-part {
+  width: 96%;
+  margin: 16px auto;
+}
+
+.cmn-title:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  content: "";
+  background-image: repeating-linear-gradient(-45deg, #fff, #fff 1px, transparent 2px, transparent 5px);
+  background-size: 7px 7px;
+  backface-visibility: hidden;
+}
+
+.notice-container {
+  background-color: rgb(237, 216, 199);
+  margin: 8px;
+  padding: 8px;
+}
+
+.notice-title {
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+
+.loop-area {
+  overflow: hidden;
+}
+
+.loop-content {
+  animation: flow 8s infinite linear 1s both;
+  padding-left: 100%;
+  white-space: nowrap;
+}
+
+@keyframes flow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.news-container {
+  background-color: rgb(237, 216, 199);
+  margin: 8px;
+  padding: 16px 8px;
+}
+
+.news-title {
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  animation: bounding-animation 2s infinite;
+}
+
+@keyframes bounding-animation {
+  0%, 50%, 100% {
+    top: 0;
+  }
+  25% {
+    top: -0.8rem;
+  }
+  75% {
+    top: -0.5rem;
+  }
+}
+.cmn-title {
+  background-color: rgb(237, 216, 199);
+  padding: 8px 16px;
+  font-weight: bold;
+  margin: 16px;
+  border-radius: 32px;
+}
+
+.cmn-two-part {
+  display: flex;
+  width: 96%;
+  margin: 16px auto;
+}
+
+.medical-hours {
+  justify-content: center;
+  align-items: center;
+}
+
+.medical-hours-content {
+  padding: 4px;
+  background-color: rgb(252, 207, 205);
+  border: 2px solid #fff;
+  text-align: center;
+}# sourceMappingURL=style.css.map */

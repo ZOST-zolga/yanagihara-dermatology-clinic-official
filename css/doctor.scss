@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.doctor-container{
+    display: flex;
+    justify-content: center;
+}
+@media(max-width: 580px){
+    .doctor-container{
+        display: block;
+    }
+}
+.doctor-greeting-container{
+    width: 70%;
+}
+.doctor-greeting{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 24px 0 16px 24px;
+}
+.doctor-desc{
+    margin: 0 32px;
+    width: 64%;
+    line-height: 2rem;
+}
+@media(max-width: 880px){
+    .doctor-desc{
+        width: inherit;
+    }
+}
+.doctor{
+    min-width: 280px;
+    max-width: 280px;
+    margin: 0 auto;
+}
+.sign{
+    text-align: center;
+    margin-top: 16px;
+}
+.qualification{
+    margin-top: 2rem;
+    display: block;
+}
