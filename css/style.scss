@@ -22,7 +22,9 @@ p, a, li, h1, h2, h3, h4, h5, h6{
     width: 96%;
     margin: 16px auto;
 }
-  
+.cmn-title.cmn-font-family{
+    font-family: 'M PLUS 1p', sans-serif;
+}
 .cmn-title:after {
     position: absolute;
     bottom: 0;
@@ -36,7 +38,17 @@ p, a, li, h1, h2, h3, h4, h5, h6{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  
+  .symptoms-contents{
+    width: 96%;
+    margin: 32px auto;
+    display: flex;
+}
+@media(max-width: 880px){
+    .symptoms-contents{
+        width: 96%;
+        display: block;
+    }
+}
 
 .notice-container{
     border-top: solid 2px const.$beige;
@@ -104,7 +116,7 @@ p, a, li, h1, h2, h3, h4, h5, h6{
 .cmn-each-part{
     display: flex;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 16px auto;
 }
 @media(max-width: 580px){
     .cmn-each-part{
@@ -122,7 +134,7 @@ p, a, li, h1, h2, h3, h4, h5, h6{
     border: solid 1px const.$white;
 }
 .medical-hours-table-title{
-    line-height: 2.6rem;
+    line-height: 1.6rem;
     text-align: center;
     background-color: const.$beige;
     padding: 4px
@@ -134,15 +146,20 @@ p, a, li, h1, h2, h3, h4, h5, h6{
     width: 32px;
     border: solid 1px const.$white;
 }
+.medical-hours-desc{
+    width: 80%;
+    margin: 0 auto;
+}
 .medical-hours-info{
     margin-top: 16px;
-    text-align: center;
+    text-align: left;
 }
 .medical-hours-info-title{
     width: 48px;
     background-color: const.$midiumGreen;
     padding: 8px;
     color: const.$white;
+    line-height: 2rem;
 }
 .bring-list-container{
     width: 90%;
@@ -159,9 +176,11 @@ p, a, li, h1, h2, h3, h4, h5, h6{
 }
 .tel-area-container{
     position: fixed;
-    bottom: 16px;
+    bottom: 48px;
     right:16px;
-    background-color: const.$darkPinkTrans;
+    // background-color: const.$darkPinkTrans;
+    background-color: const.$lightGreenTrans;
+    // background-color: const.$deepGreenTrans;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -265,3 +284,79 @@ p, a, li, h1, h2, h3, h4, h5, h6{
 .tab{
     text-indent: 1em;
 }
+.darkpink{
+    background-color: const.$darkPink;
+}
+.vaccine-container{
+    width: 90%;
+    margin: 0 auto;
+    background-color: const.$babyPink;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: const.$Black;
+}
+.h3-title{
+    font-size: 1.6rem;
+}
+// .vaccine-sentence{
+//     fs
+// }
+.vaccine-img{
+    width: 280px;
+}
+.vaccine-pic{
+    border-radius: 300px;
+}
+.tac{
+    text-align: center;
+}
+.under-line{
+    border-bottom: solid 2px const.$beige;
+}
+.w15p{
+    width: 15%;
+}
+.w20p{
+    width: 20%;
+}
+.pad8p{
+    padding: 8px;
+}
+.fwb{
+    font-weight: bold;
+}
+.b-right{
+    border-right: 2px solid const.$beige;
+}
+.tdn{
+    text-decoration: none;
+}
+.h4-title{
+    font-size: 1.2rem;
+    background-color: const.$beige;
+    padding: 8px;
+}
+.zoskin-products{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.zoskin-product{
+    width: 48%;
+    margin: 8px 0;
+    padding: 8px;
+    background-color: const.$beige;
+}
+.df{
+    display: flex;
+}
+.mtb8{
+    margin:8px 0;
+}
+// .mb8px{
+//     margin-bottom: 8px;
+// }

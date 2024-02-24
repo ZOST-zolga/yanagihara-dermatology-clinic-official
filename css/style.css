@@ -21,6 +21,10 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
   margin: 16px auto;
 }
 
+.cmn-title.cmn-font-family {
+  font-family: "M PLUS 1p", sans-serif;
+}
+
 .cmn-title:after {
   position: absolute;
   bottom: 0;
@@ -33,9 +37,21 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
   backface-visibility: hidden;
 }
 
+.symptoms-contents {
+  width: 96%;
+  margin: 32px auto;
+  display: flex;
+}
+
+@media (max-width: 880px) {
+  .symptoms-contents {
+    width: 96%;
+    display: block;
+  }
+}
 .notice-container {
-  border-top: solid 2px rgb(237, 216, 199);
-  border-bottom: solid 2px rgb(237, 216, 199);
+  border-top: solid 2px rgb(244, 230, 219);
+  border-bottom: solid 2px rgb(244, 230, 219);
   margin: 8px;
   padding: 8px;
 }
@@ -64,8 +80,8 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
   }
 }
 .news-container {
-  border-top: solid 2px rgb(237, 216, 199);
-  border-bottom: solid 2px rgb(237, 216, 199);
+  border-top: solid 2px rgb(244, 230, 219);
+  border-bottom: solid 2px rgb(244, 230, 219);
   margin: 8px;
   padding: 16px 8px;
 }
@@ -91,7 +107,7 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
   }
 }
 .cmn-title {
-  background-color: rgb(237, 216, 199);
+  background-color: rgb(244, 230, 219);
   padding: 8px 16px;
   font-weight: bold;
   border-radius: 32px;
@@ -103,7 +119,7 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 .cmn-each-part {
   display: flex;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 16px auto;
 }
 
 @media (max-width: 580px) {
@@ -124,9 +140,9 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 }
 
 .medical-hours-table-title {
-  line-height: 2.6rem;
+  line-height: 1.6rem;
   text-align: center;
-  background-color: rgb(237, 216, 199);
+  background-color: rgb(244, 230, 219);
   padding: 4px;
 }
 
@@ -137,9 +153,14 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
   border: solid 1px #fff;
 }
 
+.medical-hours-desc {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .medical-hours-info {
   margin-top: 16px;
-  text-align: center;
+  text-align: left;
 }
 
 .medical-hours-info-title {
@@ -147,6 +168,7 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
   background-color: #66cdaa;
   padding: 8px;
   color: #fff;
+  line-height: 2rem;
 }
 
 .bring-list-container {
@@ -168,9 +190,9 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 
 .tel-area-container {
   position: fixed;
-  bottom: 16px;
+  bottom: 48px;
   right: 16px;
-  background-color: rgba(195, 114, 140, 0.8);
+  background-color: rgba(167, 217, 117, 0.8);
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -228,7 +250,7 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 
 .tel-sp {
   font-size: 32px;
-  color: rgb(195, 114, 140);
+  color: rgb(219, 139, 164);
   text-decoration: none;
 }
 
@@ -279,4 +301,92 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 }
 .tab {
   text-indent: 1em;
+}
+
+.darkpink {
+  background-color: rgb(219, 139, 164);
+}
+
+.vaccine-container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(255, 230, 229);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #000;
+}
+
+.h3-title {
+  font-size: 1.6rem;
+}
+
+.vaccine-img {
+  width: 280px;
+}
+
+.vaccine-pic {
+  border-radius: 300px;
+}
+
+.tac {
+  text-align: center;
+}
+
+.under-line {
+  border-bottom: solid 2px rgb(244, 230, 219);
+}
+
+.w15p {
+  width: 15%;
+}
+
+.w20p {
+  width: 20%;
+}
+
+.pad8p {
+  padding: 8px;
+}
+
+.fwb {
+  font-weight: bold;
+}
+
+.b-right {
+  border-right: 2px solid rgb(244, 230, 219);
+}
+
+.tdn {
+  text-decoration: none;
+}
+
+.h4-title {
+  font-size: 1.2rem;
+  background-color: rgb(244, 230, 219);
+  padding: 8px;
+}
+
+.zoskin-products {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.zoskin-product {
+  width: 48%;
+  margin: 8px 0;
+  padding: 8px;
+  background-color: rgb(244, 230, 219);
+}
+
+.df {
+  display: flex;
+}
+
+.mtb8 {
+  margin: 8px 0;
 }/*# sourceMappingURL=style.css.map */

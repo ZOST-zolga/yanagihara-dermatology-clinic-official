@@ -13,14 +13,14 @@
   font-size: 14px;
   width: 180px;
   padding: 8px;
-  background-color: rgb(252, 207, 205);
+  background-color: rgb(255, 230, 229);
   display: block;
   text-align: center;
   text-decoration: none;
 }
 
 .symptoms-item-a:hover {
-  background-color: rgb(195, 114, 140);
+  background-color: rgb(219, 139, 164);
   color: #fff;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .footer-container {
-  background-color: rgb(252, 207, 205);
+  background-color: rgb(255, 230, 229);
   padding: 16px;
   position: relative;
 }
@@ -62,7 +62,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(252, 207, 205);
+  color: rgb(255, 230, 229);
   font-weight: bold;
   font-size: 1.3rem;
   text-decoration: none;
@@ -70,4 +70,54 @@
 
 .copyright {
   text-align: center;
+}
+
+.mr {
+  margin-right: 16px;
+}
+
+.sns-icon {
+  text-align: center;
+}
+
+.sns-icon a {
+  display: block;
+  font-size: 48px;
+}
+
+.sns-icon a svg {
+  color: rgb(219, 139, 164);
+}
+.sns-icon a svg:hover {
+  color: rgb(173, 147, 125);
+}
+
+.small {
+  font-size: 12px;
+}
+
+.reserve-a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  width: 70%;
+  height: 80px;
+  background-color: rgb(255, 230, 229);
+  border-radius: 48px;
+  text-align: center;
+  line-height: 80px;
+  display: block;
+  padding: 0 16px;
+  margin: 32px auto 0 auto;
+  box-shadow: 0 5px 0 rgb(219, 139, 164);
+  font-family: "M PLUS 1p";
+}
+.reserve-a:hover {
+  background-color: rgb(219, 139, 164);
+  color: #fff;
+  box-shadow: 0 5px 0 rgb(136, 80, 97);
+  width: 90%;
+  letter-spacing: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
 }/*# sourceMappingURL=footer.css.map */

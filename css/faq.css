@@ -8,7 +8,7 @@
 .open {
   /* position:absolute;の親要素はposition: relative;をつけるから */
   position: relative;
-  background-color: rgb(237, 216, 199);
+  background-color: rgb(244, 230, 219);
   padding: 10px;
 }
 

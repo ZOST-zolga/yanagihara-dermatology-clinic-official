@@ -33,7 +33,7 @@
 .hero-slidein {
   text-align: center;
   font-size: 48px;
-  color: rgb(195, 114, 140);
+  color: rgb(219, 139, 164);
   line-height: 6rem;
   animation: hero-slidein 3s linear;
   animation-fill-mode: forwards;

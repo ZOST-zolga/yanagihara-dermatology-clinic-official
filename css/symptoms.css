@@ -1,18 +1,93 @@
-.symptoms-contents {
-  width: 96%;
-  margin: 32px auto;
-  display: flex;
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap");
+.content-sentence a {
+  color: #000;
 }
 
-@media (max-width: 880px) {
-  .symptoms-contents {
-    width: 96%;
-    display: block;
-  }
+.own-expense-sentence a {
+  color: #000;
 }
-.content-sentence {
+
+.herpes-zoster-vaccine {
+  width: 100%;
+  margin: 0 auto;
+  border: solid 3px rgb(244, 230, 219);
+  padding: 16px;
+}
+.herpes-zoster-vaccine th {
+  padding: 8px;
+  border: 3px solid rgb(244, 230, 219);
+  background-color: rgb(244, 230, 219);
+  font-weight: bolder;
+}
+.herpes-zoster-vaccine td {
+  padding: 8px;
+  border: 3px solid rgb(244, 230, 219);
+}
+.herpes-zoster-vaccine td:nth-child(1) {
+  font-weight: bold;
+}
+
+.content-sentence, .own-expense-sentence {
   width: 100%;
   margin-bottom: 16px;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8rem;
+}
+
+.content-sentence h2 {
+  margin-top: 16px;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.content-sentence h2.cmn-title {
+  font-size: 1rem;
+}
+
+.content-sentence h2:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: rgb(244, 230, 219);
+}
+
+.content-sentence h2.cmn-title:before {
+  display: none;
+}
+
+.content-sentence h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 32px 0 16px 0;
+}
+
+.own-expense-sentence h2 {
+  margin-top: 16px;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.own-expense-sentence h2:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: rgb(244, 230, 219);
 }
 
 .thumnail-img {
@@ -32,4 +107,103 @@
 .attachment-full {
   width: 280px;
   height: auto;
+}
+
+.beauty-tb {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 3px solid rgb(244, 230, 219);
+}
+
+.beauty-tb th {
+  padding: 8px;
+  border: 3px solid rgb(244, 230, 219);
+  background-color: rgb(244, 230, 219);
+  font-weight: 700;
+}
+
+.beauty-tb td {
+  padding: 8px;
+  border: 3px solid rgb(244, 230, 219);
+}
+
+.great-value {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(219, 139, 164);
+  color: #fff;
+  padding: 0 8px;
+}
+
+.zoskin-img-container {
+  width: 100%;
+  min-width: 80px;
+}
+
+@media (max-width: 880px) {
+  .zoskin-product {
+    display: block;
+  }
+}
+@media (max-width: 580px) {
+  .zoskin-product {
+    width: 100%;
+    display: flex;
+  }
+}
+.zoskin-type {
+  border: 6px double #fff;
+  padding: 4px;
+}
+
+.pad16p {
+  padding: 16px;
+}
+
+.zoskin-desc {
+  margin: 16px;
+}
+
+.tdc-white {
+  text-decoration-color: #fff;
+}
+
+.skin-type {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.pad4p {
+  padding: 4px;
+}
+
+.zoskin-products {
+  font-size: 13px;
+}
+
+.zoskin-product {
+  margin: 8px auto;
+}
+
+@media (min-width: 1001px) {
+  .zoskin-product {
+    min-width: 300px;
+    max-width: 100%;
+  }
+}
+.tar {
+  text-align: right;
+}
+
+.tac {
+  text-align: center;
+}
+
+.border-top {
+  border-top: 3px solid #fff;
+}
+
+.border-btm {
+  border-bottom: 3px solid #fff;
 }/*# sourceMappingURL=symptoms.css.map */

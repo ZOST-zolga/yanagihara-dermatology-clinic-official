@@ -1,21 +1,89 @@
 @charset "utf-8";
 
 @use 'const';
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
 
-.symptoms-contents{
-    width: 96%;
-    margin: 32px auto;
-    display: flex;
+.content-sentence a{
+    color: const.$Black;
 }
-@media(max-width: 880px){
-    .symptoms-contents{
-        width: 96%;
-        display: block;
+.own-expense-sentence a{
+    color: const.$Black;
+}
+.herpes-zoster-vaccine{
+    width: 100%;
+    margin: 0 auto;
+    border: solid 3px const.$beige;
+    padding: 16px;
+    th{
+        padding: 8px;
+        border: 3px solid const.$beige;
+        background-color: const.$beige;
+        font-weight: bolder;
+    }
+    td{
+        padding: 8px;
+        border: 3px solid const.$beige;
+    }
+    td:nth-child(1){
+        font-weight: bold;
     }
 }
-.content-sentence{
+.content-sentence, .own-expense-sentence{
     width: 100%;
     margin-bottom: 16px;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.8rem;
+}
+.content-sentence h2{
+    margin-top: 16px;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.content-sentence h2.cmn-title{
+    font-size: 1rem;
+}
+.content-sentence h2:before{
+    // border-bottom: 3px solid const.$beige;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: const.$beige;
+}
+.content-sentence h2.cmn-title:before{
+    display: none;
+}
+.content-sentence h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 32px 0 16px 0;
+}
+.own-expense-sentence h2{
+    margin-top: 16px;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.own-expense-sentence h2:before{
+    // border-bottom: 3px solid const.$beige;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: const.$beige;
 }
 .thumnail-img{
     width: 280px;
@@ -33,4 +101,93 @@
     width: 280px;
     height: auto;
 }
-
+.beauty-tb{
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 3px solid const.$beige;
+}
+.beauty-tb th{
+    padding: 8px;
+    border: 3px solid const.$beige;
+    background-color: const.$beige;
+    font-weight: 700;
+    // font-size: 1.2rem;
+}
+.beauty-tb td{
+    padding: 8px;
+    border: 3px solid const.$beige;
+    // font-size: 1.2rem;
+}
+.great-value{
+    width: 100%;
+    margin: 0 auto;
+    background-color: const.$darkPink;
+    color: const.$white;
+    padding: 0 8px
+}
+.zoskin-img-container{
+    width: 100%;
+    min-width: 80px;
+}
+@media(max-width: 880px){
+    .zoskin-product{
+        display: block;
+    }
+}
+@media(max-width: 580px){
+    .zoskin-product{
+        width: 100%;
+        display: flex;
+    }
+}
+.zoskin-type{
+    border: 6px double const.$white;
+    padding: 4px;
+}
+.pad16p{
+    padding: 16px;
+}
+.zoskin-desc{
+    margin: 16px;
+}
+.tdc-white{
+    text-decoration-color: const.$white;
+}
+.skin-type{
+    background-color: const.$whiteTrans;
+}
+.pad4p{
+    padding: 4px;
+}
+.zoskin-products{
+    font-size: 13px;
+}
+.zoskin-product{
+    margin: 8px auto;
+}
+@media(min-width: 1001px){
+    .zoskin-product{
+        min-width: 300px;
+        max-width: 100%;
+    }
+}
+// @media(min-width: 881px){
+//     .zoskin-product{
+//         max-width: 300px;
+//         min-width: 300px;
+//     }
+// }
+.tar{
+    text-align: right;
+}
+.tac{
+    text-align: center;
+}
+.border-top{
+    border-top: 3px solid const.$white;
+}
+.border-btm{
+    border-bottom: 3px solid const.$white;
+}

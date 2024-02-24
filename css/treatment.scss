@@ -2,11 +2,53 @@
 
 @use 'const';
 
-.medical-contents-detail{  
-    margin: 16px 16px 16px 32px;
+.beauty-fee-container{
+    width: 96%;
+    margin: 0 auto 32px auto;
+    display: flex;
 }
+.beauty-fee{
+    line-height: 1.8rem;
+    margin: 16px 0;
+}
+.beauty-fee-title{
+    background-color: const.$darkPink;
+    color: const.$white;
+    padding: 8px 16px;
+    margin: 0 16px;
+}
+.medical-contents-detail{  
+    width: 24%;
+    margin-bottom: 16px;
+    margin-right: calc(4% / 3);
+    display: flex;
+}
+@media(max-width: 580px){
+    .medical-contents-detail{  
+        width: 46%;
+        margin-bottom: 16px;
+        margin-right: 8%;
+    }
+    .medical-contents-detail:nth-child(2n){
+        margin-right: 0;
+    }
+}
+
+.medical-contents-detail:nth-child(4n){
+    margin-right: 0;
+}
+.beauty-contents-detail-a{
+    background-color: const.$babyPink;
+    width: 96%;
+    height: auto;
+    display: block;
+    padding: 8px;
+    color: const.$darkGray;
+    text-decoration: none;
+    margin: 0 auto;
+}  
 .medical-contents-detail-a{
-    background-color: const.$beige;
+    background-color: const.$paleGreen;
     width: 96%;
     height: auto;
     display: block;
@@ -16,27 +58,74 @@
     margin: 0 auto;
 }  
 .medical-contents-detail-a:hover{
-    background-color: const.$babyPink;
+    background-color: const.$beige;
 }
 .insurance-treatment{
-    background-color: const.$babyPink;
+    background-color: const.$midiumPaleGreen;
     width: 50%;
-    height: 320px;
+    height: 160px;
     text-decoration: none;
+    border-radius: 48px;
+    margin-right: 8px;
+    outline-offset: -12px;
+    outline: 5px dashed const.$white;
+    &:hover{
+        background-color: const.$paleBeige;
+    }
 }
 .own-expense-treatment{
-    background-color: const.$lightGreen;
+    background-color: const.$babyPink;
     width: 50%;
-    height: 320px;
+    height: 160px;
     text-decoration: none;
+    border-radius: 48px;
+    margin-left: 8px;
+    outline-offset: -12px;
+    outline: 5px dashed const.$white;
+    &:hover{
+        background-color: const.$paleBeige;
+    }
 }
 .treatment-title{
     text-align: center;
-    line-height: 320px;
+    line-height: 160px;
     font-size: 2rem;
     font-weight: bold;
     color: const.$Black;
 }
-.insurance-treatment:hover,.own-expense-treatment:hover{
-    background-color: const.$paleGray;
+@media(max-width: 580px){
+    .treatment-title{
+        font-size: 22px;
+    }
+}
+.medical-contents-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 90%;
+    margin: auto;
+}
+.thumnail-img{
+    position: relative;
+    width: 100%;
+}
+.thumnail-img:before {
+    content: '';
+    display: block;
+    padding-top: 100%; /* 縦横比を自由に設定 */
+}
+.thumnail-img img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 8px;
+    position: absolute;
+    top: 0;
+}
+// .insurance-treatment:hover,.own-expense-treatment:hover{
+//     background-color: const.$paleGray;
+// }
+.title-desc{
+    margin: 0 32px 16px 32px;
 }

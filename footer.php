@@ -1,3 +1,4 @@
+<!-- <a class="reserve-a" href="" target="_blank">ネット予約はこちら</a> -->
 <div class="cmn-each-part">
     <section class="cmn-two-part">
         <h2 class="cmn-title" id="medical-time">診療時間</h2>
@@ -13,7 +14,10 @@
                 <td class="medical-hours-content">日</td>
             </tr>
             <tr class="medical-hours-row">
-                <th class="medical-hours-table-title">10:00-13:00</th>
+                <!-- <th class="medical-hours-table-title"><span class="small">通常診療</span><br>9:00-13:00</th> -->
+                <th class="medical-hours-table-title">
+                    <!-- <span class="small">通常診療</span><br> -->
+                    9:00-13:00</th>
                 <td class="medical-hours-content">&#9675;</td>
                 <td class="medical-hours-content">&#9675;</td>
                 <td class="medical-hours-content">&#9675;</td>
@@ -23,7 +27,10 @@
                 <td class="medical-hours-content">&#0215;</td>
             </tr>
             <tr class="medical-hours-row">
-                <th class="medical-hours-table-title">16:00-19:00</th>
+                <!-- <th class="medical-hours-table-title"><span class="small">通常診療</span><br>16:00-19:00</th> -->
+                <th class="medical-hours-table-title">
+                    <!-- <span class="small">通常診療</span><br> -->
+                    16:00-19:00</th>
                 <td class="medical-hours-content">&#9675;</td>
                 <td class="medical-hours-content">&#9675;</td>
                 <td class="medical-hours-content">&#9675;</td>
@@ -33,20 +40,81 @@
                 <td class="medical-hours-content">&#0215;</td>
             </tr>
         </table>
-    <div class="medical-hours-info">
-        <span class="medical-hours-info-title">休診</span>
-        <span class="medical-hours-info-content">木曜・土曜午後・日曜・祝日</span>
-    </div>
+        <div class="medical-hours-desc">
+            <div class="medical-hours-info">
+                <span class="medical-hours-info-title">休診</span>
+                <span class="medical-hours-info-content">木曜・土曜午後・日曜・祝日</span>
+            </div>
+        </div>
     </section>
+    <!--4月からの診療時間
+         <section class="cmn-two-part">
+        <h2 class="cmn-title" id="medical-time">診療時間</h2>
+        <table class="medical-hours-table">
+            <tr class="medical-hours-row">
+                <th class="medical-hours-table-title">診療時間</th>
+                <td class="medical-hours-content">月</td>
+                <td class="medical-hours-content">火</td>
+                <td class="medical-hours-content">水</td>
+                <td class="medical-hours-content">木</td>
+                <td class="medical-hours-content">金</td>
+                <td class="medical-hours-content">土</td>
+                <td class="medical-hours-content">日</td>
+            </tr>
+            <tr class="medical-hours-row">
+                <th class="medical-hours-table-title"><span class="small">通常診療</span><br>10:00-13:00</th>
+                <td class="medical-hours-content">&#9675;</td>
+                <td class="medical-hours-content">&#9675;</td>
+                <td class="medical-hours-content">&#9675;</td>
+                <td class="medical-hours-content">&#0215;</td>
+                <td class="medical-hours-content">&#9675;</td>
+                <td class="medical-hours-content">&#9675;</td>
+                <td class="medical-hours-content">&#0215;</td>
+            </tr>
+            <tr class="medical-hours-row">
+                <th class="medical-hours-table-title"><span class="small">美容処置</span><br>15:00-16:00</th>
+                <td class="medical-hours-content">&#9733;</td>
+                <td class="medical-hours-content">&#0215;</td>
+                <td class="medical-hours-content">&#9733;</td>
+                <td class="medical-hours-content">&#0215;</td>
+                <td class="medical-hours-content">&#9733;</td>
+                <td class="medical-hours-content">&#0215;</td>
+                <td class="medical-hours-content">&#0215;</td>
+            </tr>
+            <tr class="medical-hours-row">
+                <th class="medical-hours-table-title"><span class="small">通常診療</span><br>16:00-19:00</th>
+                <td class="medical-hours-content">&#9675;</td>
+                <td class="medical-hours-content">&#9675;</td>
+                <td class="medical-hours-content">&#9675;</td>
+                <td class="medical-hours-content">&#0215;</td>
+                <td class="medical-hours-content">&#9675;</td>
+                <td class="medical-hours-content">&#0215;</td>
+                <td class="medical-hours-content">&#0215;</td>
+            </tr>
+        </table>
+        <div class="medical-hours-desc">
+            <div class="medical-hours-info">
+                <span class="medical-hours-info-title darkpink">美容処置・完全予約制</span>
+                <span class="medical-hours-info-content">月曜・水曜・金曜</span>
+            </div>
+            <div class="medical-hours-info">
+                <span class="medical-hours-info-title">休診</span>
+                <span class="medical-hours-info-content">木曜・土曜午後・日曜・祝日</span>
+            </div>
+        </div>
+    </section> -->
     <section class="cmn-two-part">
         <h2 class="cmn-title" id="first-time">初診の方へ : お持ちいただくもの</h2>
         <div class="bring-list-container">
             <ul class="bring-list">
                 <li class="bring-item">&#9312;健康保険証（月１回は提示をお願いします）</li>
-                <li class="bring-item">&#9313;マイナンバーカード（お持ちの方のみ）</span></li>
+                <li class="bring-item">&#9313;マイナンバーカード（お持ちの方のみ）</li>
                 <li class="bring-item">&#9314;お薬手帳（お持ちの方のみ）</li>
                 <li class="bring-item">&#9315;診療情報提供書（お持ちの方のみ）</li>
             </ul>
+            <div class="medical-hours-info">
+                <span class="medical-hours-info-title darkpink">当クリニックは来院順に診察致します。<!--（注）美容処置以外--></span>
+            </div>
         </div>
     </section>
 </div>
@@ -61,8 +129,8 @@
                 </div>
             </div>
             <ul class="access-list">
-                <li class="access-item">大阪メトロ・今里筋線・緑橋駅6番出口から徒歩1分</li>
-                <li class="access-item">大阪メトロ・中央線・緑橋駅4番出口から徒歩3分</li>
+                <li class="access-item"><i class="fas fa-train mr"></i>大阪メトロ・今里筋線・緑橋駅7番出口から徒歩1分</li>
+                <li class="access-item"><i class="fas fa-train mr"></i>大阪メトロ・中央線・緑橋駅4番出口から徒歩3分</li>
             </ul>
         </div>
     </section>
@@ -87,15 +155,18 @@
         <?php endif; ?>
             <li class="footer-menu-item"><a href="<?php echo home_url('doctor'); ?>" class="footer-menu-item-a">&raquo;医師紹介</a></li>
             <li class="footer-menu-item"><a href="<?php echo home_url('treatment'); ?>" class="footer-menu-item-a">&raquo;診療内容</a></li>
-            <li class="footer-menu-item"><a href="<?php echo home_url('insurance-treatment'); ?>" class="footer-menu-item-a">&raquo;保険治療</a></li>
-            <li class="footer-menu-item"><a href="<?php echo home_url('own-expense-treatment'); ?>" class="footer-menu-item-a">&raquo;自費診療</a></li>
-            <li class="footer-menu-item"><a href="<?php echo home_url('equipment'); ?>" class="footer-menu-item-a">&raquo;院内設備紹介</a></li>
+            <li class="footer-menu-item"><a href="<?php echo home_url('insurance-treatment'); ?>" class="footer-menu-item-a">&raquo;一般皮膚科</a></li>
+            <li class="footer-menu-item"><a href="<?php echo home_url('own-expense-treatment'); ?>" class="footer-menu-item-a">&raquo;美容皮膚科</a></li>
+            <li class="footer-menu-item"><a href="<?php echo home_url('equipment'); ?>" class="footer-menu-item-a">&raquo;院内写真</a></li>
             <li class="footer-menu-item"><a href="<?php echo home_url('faq'); ?>" class="footer-menu-item-a">&raquo;よくある質問</a></li>
             <li class="footer-menu-item"><a href="#medical-time" class="footer-menu-item-a">&raquo;診療時間</a></li>
             <li class="footer-menu-item"><a href="#access-info" class="footer-menu-item-a">&raquo;アクセス・地図</a></li>
     </ul>
 </div>
 <footer class="footer-container">
+    <div class="sns-icon">
+        <a href="https://www.instagram.com/yanagihara.derma/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
     <a href="#" class="scroll-page-top">
             &#0060;
     </a>

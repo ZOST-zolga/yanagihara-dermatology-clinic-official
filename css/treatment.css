@@ -1,9 +1,56 @@
+@charset "UTF-8";
+.beauty-fee-container {
+  width: 96%;
+  margin: 0 auto 32px auto;
+  display: flex;
+}
+
+.beauty-fee {
+  line-height: 1.8rem;
+  margin: 16px 0;
+}
+
+.beauty-fee-title {
+  background-color: rgb(219, 139, 164);
+  color: #fff;
+  padding: 8px 16px;
+  margin: 0 16px;
+}
+
 .medical-contents-detail {
-  margin: 16px 16px 16px 32px;
+  width: 24%;
+  margin-bottom: 16px;
+  margin-right: 1.3333333333%;
+  display: flex;
+}
+
+@media (max-width: 580px) {
+  .medical-contents-detail {
+    width: 46%;
+    margin-bottom: 16px;
+    margin-right: 8%;
+  }
+  .medical-contents-detail:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+.medical-contents-detail:nth-child(4n) {
+  margin-right: 0;
+}
+
+.beauty-contents-detail-a {
+  background-color: rgb(255, 230, 229);
+  width: 96%;
+  height: auto;
+  display: block;
+  padding: 8px;
+  color: #333;
+  text-decoration: none;
+  margin: 0 auto;
 }
 
 .medical-contents-detail-a {
-  background-color: rgb(237, 216, 199);
+  background-color: rgb(226, 245, 198);
   width: 96%;
   height: auto;
   display: block;
@@ -14,31 +61,80 @@
 }
 
 .medical-contents-detail-a:hover {
-  background-color: rgb(252, 207, 205);
+  background-color: rgb(244, 230, 219);
 }
 
 .insurance-treatment {
-  background-color: rgb(252, 207, 205);
+  background-color: rgb(226, 245, 198);
   width: 50%;
-  height: 320px;
+  height: 160px;
   text-decoration: none;
+  border-radius: 48px;
+  margin-right: 8px;
+  outline-offset: -12px;
+  outline: 5px dashed #fff;
+}
+.insurance-treatment:hover {
+  background-color: rgba(237, 216, 199, 0.5);
 }
 
 .own-expense-treatment {
-  background-color: #a2e8d1;
+  background-color: rgb(255, 230, 229);
   width: 50%;
-  height: 320px;
+  height: 160px;
   text-decoration: none;
+  border-radius: 48px;
+  margin-left: 8px;
+  outline-offset: -12px;
+  outline: 5px dashed #fff;
+}
+.own-expense-treatment:hover {
+  background-color: rgba(237, 216, 199, 0.5);
 }
 
 .treatment-title {
   text-align: center;
-  line-height: 320px;
+  line-height: 160px;
   font-size: 2rem;
   font-weight: bold;
   color: #000;
 }
 
-.insurance-treatment:hover, .own-expense-treatment:hover {
-  background-color: #dad8d8;
+@media (max-width: 580px) {
+  .treatment-title {
+    font-size: 22px;
+  }
+}
+.medical-contents-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  width: 90%;
+  margin: auto;
+}
+
+.thumnail-img {
+  position: relative;
+  width: 100%;
+}
+
+.thumnail-img:before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* 縦横比を自由に設定 */
+}
+
+.thumnail-img img {
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+}
+
+.title-desc {
+  margin: 0 32px 16px 32px;
 }/*# sourceMappingURL=treatment.css.map */

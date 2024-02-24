@@ -28,7 +28,7 @@
 .hamburger-navi.active{
     transform: translateX(0);
 }
-.hamburger-li > a,{
+.hamburger-li > a{
     color: const.$white;
     text-decoration: none;
     font-size: 16px;
@@ -63,7 +63,7 @@
 
 #mask.active{
     background-color: const.$darkPink;
-    opacity: .8;
+    opacity: .9;
     width: 100vw;
     height: 100vh;
     position: fixed;

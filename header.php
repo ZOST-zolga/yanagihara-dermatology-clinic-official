@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <!-- Google tag (gtag.js) ここから-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBH3DD1DSY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FBH3DD1DSY');
+    </script>
+    <!-- Google tag (gtag.js) ここまで-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=”description” content="大阪府大阪市城東区の皮膚科・医療法人緑泉会・柳原皮膚科クリニック。創業35年の安心。"/>
+    <meta name="description" content="大阪府大阪市城東区の皮膚科・医療法人緑泉会・柳原皮膚科クリニック。創業35年。安心を提供致します。"/>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <!--fontawesome-->
@@ -21,10 +31,10 @@
     <?php if ( is_page('treatment')) : ?>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/all-treatment.css">
     <?php endif; ?>
-    <?php if ( is_page('insurance-treatment') || is_page('own-expense-treatment') || is_page('treatment')) : ?>
+    <?php if ( is_page('insurance-treatment') || is_page('own-expense-treatment') || is_page('treatment')|| is_page('fee')) : ?>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/treatment.css">
     <?php endif; ?>
-    <?php if ( is_singular('insurance') ||  is_singular('own-expense')) : ?>
+    <?php if ( is_singular('insurance') ||  is_singular('own-expense') || is_page('vaccine')  || is_page('fee')  || is_page('equipment')) : ?>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/symptoms.css">
     <?php endif; ?>
     <?php if (is_singular('own-expense')) : ?>
@@ -41,13 +51,14 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/hamburger.js" defer></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/faq.js" defer></script>
     <title>柳原皮膚科クリニック</title>
+    <meta name="google-site-verification" content="sTmPm_rjgl13EcCeVb9laoGPMRWcgoV-Hd6Kx7I3snY" />
 </head>
 <body>
 <header>
     <div class="header-top">
         <div class="logo-img">
             <a href="<?php echo home_url(''); ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/yanagihara-hifuka-logo.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/yanagihara-derma_logo-rectangle.png" alt="">
             </a>
         </div>
         <div>
@@ -68,7 +79,7 @@
                         </div>
                     </a>
                 </div>
-                <p class="safe"><span class="founding">創業35年</span>の当院へ安心してお任せ下さい</p>
+                <p class="safe"><span class="founding">創業35年</span>の当院へ安心してご来院下さい</p>
             </div>
         </div>
     </div>
@@ -81,10 +92,11 @@
                 <li class="hamburger-li">
                     <a href="<?php echo get_template_directory_uri(); ?>/treatment">診療内容</a>
                     <ul class="hamburger-ul">
-                        <li class="hamburger-li"><a href="<?php echo home_url('insurance-treatment'); ?>" >保険治療</a></li>
-                        <li class="hamburger-li"><a href="<?php echo home_url('own-expense-treatment'); ?>">自費診療</a></li>
+                        <li class="hamburger-li"><a href="<?php echo home_url('insurance-treatment'); ?>" >一般皮膚科</a></li>
+                        <li class="hamburger-li"><a href="<?php echo home_url('own-expense-treatment'); ?>">美容皮膚科</a></li>
                     </ul></li>
-                <li class="hamburger-li"><a href="<?php echo get_template_directory_uri(); ?>/equipment">院内設備紹介</a></li>
+                <li class="hamburger-li"><a href="<?php echo get_template_directory_uri(); ?>/fee">料金</a></li>
+                <li class="hamburger-li"><a href="<?php echo get_template_directory_uri(); ?>/equipment">院内写真</a></li>
                 <li class="hamburger-li"><a href="<?php echo get_template_directory_uri(); ?>/faq">よくある質問</a></li>
             </ul>
         </nav>
@@ -121,12 +133,15 @@
                 <li class="menu-item menu-item-pulldown">
                     <a href="<?php echo home_url('treatment'); ?>" class="menu-item-container">診療内容</a>
                     <ul class="js_menu_pulldown ">
-                        <li class="js_menu_pulldown-item"><a href="<?php echo home_url('insurance-treatment'); ?>">保険治療</a></li>
-                        <li class="js_menu_pulldown-item"><a href="<?php echo home_url('own-expense-treatment'); ?>">自費診療</a></li>
+                        <li class="js_menu_pulldown-item"><a href="<?php echo home_url('insurance-treatment'); ?>">一般皮膚科</a></li>
+                        <li class="js_menu_pulldown-item"><a href="<?php echo home_url('own-expense-treatment'); ?>">美容皮膚科</a></li>
                     </ul>
                 </li>
                 <li class="menu-item">
-                    <a href="<?php echo home_url('equipment'); ?>" class="menu-item-container">院内設備紹介</a>
+                    <a href="<?php echo home_url('fee'); ?>" class="menu-item-container">料金</a>
+                </li>
+                <li class="menu-item">
+                    <a href="<?php echo home_url('equipment'); ?>" class="menu-item-container">院内写真</a>
                 </li>
                 <li class="menu-item">
                     <a href="<?php echo home_url('faq'); ?>" class="menu-item-container">よくある質問</a>
@@ -136,5 +151,4 @@
         </nav>
     </div>
 </header>
-</body>
-</html>
+

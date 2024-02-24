@@ -1,18 +1,29 @@
 @charset "utf-8";
 
 $white: #fff;
+$whiteTrans: rgba(255, 255, 255, .8);
 $Black: #000;
 $darkGray: #333;
 $paleGray: #dad8d8;
-$beige: rgb(237, 216, 199);
+// $beige: rgb(237, 216, 199);
+$beige: rgba(244, 230, 219,1);
 $paleBeige: rgba(237, 216, 199, .5);
 $darkBeige: rgb(173, 147, 125);
-$darkPink: rgb(195, 114, 140);
+// $darkPink: rgb(195, 114, 140);
+$darkPink: rgb(219, 139, 164);
+$darkerPink: rgb(136, 80, 97);
 $darkPinkTrans: rgb(195, 114, 140,.8);
-$babyPink: rgb(252, 207, 205);
+// $babyPink: rgba(252, 207, 205, 1);
+$babyPink: rgba(255, 230, 229, 1);
 $babyPinkPale: rgb(252, 207, 205,.5);
 $midiumGreen: #66cdaa;
+$paleGreen: rgba(226, 245, 198, 1);
+$midiumPaleGreen: rgba(226, 245, 198, 1);
+$lightGreenTrans: rgba(167, 217, 117, .8);
+$yellowGreen: rgba(179, 255, 103, 0.5);
+$deepGreenTrans: rgba(119, 201, 113, .8);
 $lightGreen: #a2e8d1;
+$gold: rgba(162, 151, 51, 1);
 
 // ブレイクポイントメモ
 // max-width: 880px

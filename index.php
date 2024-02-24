@@ -1,28 +1,38 @@
 <?php
+    $session_time = 86400;
+    ini_set( 'session.gc_divisor', 1);
+    ini_set( 'session.gc_maxlifetime', $session_time );
+?>
+<?php
 session_start();
 include('header.php');
 ?>
 <main>
-    <?php if(!isset($_SESSION['is_visited'])): ?>
+    <?php 
+    if(!isset($_SESSION['is_visited'])): 
+    ?>
     <div class="hero-fadein">
         <div class="hero-slidein-container">
-            <p class="hero-slidein">YANAGIHARA</p>
+            <img class="hero-slidein" src="<?php echo get_template_directory_uri(); ?>/img/yanagihara-derma_logo-rectangle.png" alt="">
+            <!-- <p class="hero-slidein">YANAGIHARA</p>
             <p class="hero-slidein">DERMATOLOGY</p>
-            <p class="hero-slidein">CLINIC</p>
+            <p class="hero-slidein">CLINIC</p> -->
         </div>
     </div>
-    <?php endif; 
+    <?php 
+    endif; 
     $_SESSION['is_visited'] = true; 
     ?>
     <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide1.jpg" alt="slide1"></div>
-        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide2.jpg" alt="slide2"></div>
+        <!-- <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide1.jpg" alt="slide1"></div> -->
+        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide14.jpg" alt="slide2"></div>
         <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide3.jpg" alt="slide3"></div>
-        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide4.jpg" alt="slide4"></div>
-        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide9.jpg" alt="slide9"></div>
+        <!-- <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide4.jpg" alt="slide4"></div> -->
+        <!-- <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide10.jpg" alt="slide10"></div> -->
+        <!-- <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide9.jpg" alt="slide9"></div> -->
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -75,7 +85,7 @@ include('header.php');
         <section class="tel-area-container">
             <i class="fas fa-phone tel-mark"></i>
             <span class="tel-area">
-                <span class="tel">06-6963-3492</span>
+                <a href="tel:06-6963-3492" class="tdn"><span class="tel">06-6963-3492</span></a>
             </span>
             <p class="tel-info">いつでも<br>お気軽に<br>お電話下さい</p>
         </section>

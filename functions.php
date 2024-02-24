@@ -8,7 +8,7 @@ function create_post_type() {
   register_post_type(
     'insurance',
     array(
-      'label' => '保険治療',
+      'label' => '一般皮膚科',
       'public' => true,
       'has_archive' => true,
       'show_in_rest' => true,
@@ -25,7 +25,7 @@ function create_post_type() {
   register_post_type(
     'own-expense',
     array(
-      'label' => '自費診療',
+      'label' => '美容皮膚科',
       'public' => true,
       'has_archive' => true,
       'show_in_rest' => true,
