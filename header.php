@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+<head prefix="og: https://ogp.me/ns#">
     <!-- Google tag (gtag.js) ここから-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBH3DD1DSY"></script>
     <script>
@@ -13,7 +13,13 @@
     <!-- Google tag (gtag.js) ここまで-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="大阪府大阪市城東区の皮膚科・医療法人緑泉会・柳原皮膚科クリニック。創業35年。安心を提供致します。"/>
+    <meta name="description" content="大阪府大阪市城東区の皮膚科・医療法人緑泉会・柳原皮膚科クリニック公式サイト。創業35年。安心を提供致します。"/>
+    <meta property="og:url" content=" https://yanagihara-derma.site/" />
+    <meta property="og:type" content=" website" />
+    <meta property="og:title" content="医療法人緑泉会・柳原皮膚科クリニック公式サイト" />
+    <meta property="og:description" content="大阪府大阪市城東区の皮膚科・医療法人緑泉会・柳原皮膚科クリニック公式サイト。創業35年。安心を提供致します。" />
+    <meta property="og:site_name" content="医療法人緑泉会・柳原皮膚科クリニック公式サイト" />
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/og-image.jpg" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <!--fontawesome-->

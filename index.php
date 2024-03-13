@@ -28,7 +28,9 @@ include('header.php');
         <div class="swiper-wrapper">
         <!-- Slides -->
         <!-- <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide1.jpg" alt="slide1"></div> -->
-        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide14.jpg" alt="slide2"></div>
+        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide14.jpg" alt="slide14"></div>
+        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide11.jpg" alt="slide11"></div>
+        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide12.jpg" alt="slide12"></div>
         <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide3.jpg" alt="slide3"></div>
         <!-- <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide4.jpg" alt="slide4"></div> -->
         <!-- <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/mainslide/slide10.jpg" alt="slide10"></div> -->
